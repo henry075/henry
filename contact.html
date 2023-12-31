@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+       <!--navbar-->
+  <div class="navbar">
+    <div class="nav-links">
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="product.html" class="nav-link">Products</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776; DRIP CLOTHING STORE</div>
+  </div>
+
+ <!-- Centered Contact Details -->
+ <div class="contact-details">
+  <h1>Contact Me</h1>
+  <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Kawangware, Nairobi, kenya</p>
+  <p><i class="fas fa-phone"></i> <strong>Phone Number:</strong> +254 750839527</p>
+  <p><i class="far fa-envelope"></i> <strong>Email:</strong> abrahamchol463@gmail.com</p>
+</div>
+
+<!-- Styled Email Form -->
+<div class="email-form">
+  <h2>Send us an Email</h2>
+  <form id="emailForm" onsubmit="return validateEmail()">
+      <label for="senderEmail"><i class="far fa-envelope"></i> Your Email:</label>
+      <input type="email" id="senderEmail" name="senderEmail" placeholder="Enter your email" required>
+
+      <label for="message"><i class="fas fa-comment"></i> Message:</label>
+      <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+
+      <button type="submit" class="submit-btn"><i class="far fa-paper-plane"></i> Send Email</button>
+  </form>
+</div>
+
+<div class="footer">
+  &copy; 2023 Drip clothing store. All Rights Reserved. | 
+  <p>created by Chol Abraham</p>
+  <a href="#">Privacy Policy</a> | 
+  <a href="">Terms of Service</a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
