@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your clothing store description">
+  <meta name="keywords" content="clothing, fashion, shoes, sneakers, online store">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Home</title>
+</head>
+<body>
+<!--navbar-->
+<div class="navbar">
+  <div class="nav-links">
+    <a href="home.html" class="nav-link">Home</a>
+    <a href="product.html" class="nav-link">Products</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="about.html" class="nav-link">About</a>
+  </div>
+
+  <div class="cart-icon" onclick="toggleCart()">
+    🛒
+    <span class="cart-icon-count" id="cart-icon-count">0</span>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">&#9776; DRIP CLOTHING STORE</div>
+</div>
+  
+<div class="product-container">
+  <!-- Jordan -->
+    <div class="product-card" onclick="addToCart('product : Jordan', 19.99)">
+        <img src="j4 1.png" alt="Product" class="product-image">
+        <div class="product-title">Jordan 4</div>
+        <div class="product-price">$19.99</div>
+        <button class="add-to-cart-button" onclick="addToCart('product : Jordan', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card" onclick="addToCart('product : Jordan (black)', 29.99)">
+    <img src="j4 2.png" alt="Product" class="product-image">
+    <div class="product-title">Jordan 4</div>
+    <div class="product-price">$29.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('product : Jordan (black)', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Jordan (blue)', 39.99)">
+    <img src="j4 3.png" alt="Product" class="product-image">
+    <div class="product-title">Jordan 4</div>
+    <div class="product-price">$39.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Jordan (blue)', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Nike Air Jordan', 49.99)">
+    <img src="j4 4.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Air jordan</div>
+    <div class="product-price">$49.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Nike Air Jordan', 49.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Nike Air Jordan 11', 59.99)">
+    <img src="j4 5.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Air Jordan11</div>
+    <div class="product-price">$59.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Nike Air Jordan 11', 59.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Jordan', 69.99)">
+    <img src="j4 6.png" alt="Product" class="product-image">
+    <div class="product-title">Jordan 4</div>
+    <div class="product-price">$69.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Jordan', 69.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Jordan (yellow)', 79.99)">
+    <img src="j4 7.png" alt="Product" class="product-image">
+    <div class="product-title">Jordan 4</div>
+    <div class="product-price">$79.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Jordan (yellow)', 79.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Jordan (green)', 89.99)">
+    <img src="j4 8.png" alt="Product" class="product-image">
+    <div class="product-title">Jordan 4</div>
+    <div class="product-price">$89.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Jordan (green)', 89.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">AIRMAX</h3>
+<marquee behavior="scroll" direction="left" style="color: #28a745;">Welcome to Drip clothing store</marquee>
+
+
+<div class="product-container">
+  <!-- Airmax -->
+    <div class="product-card" onclick="addToCart('product : Airmax', 19.99)">
+        <img src="airmax 1.png" alt="Product" class="product-image">
+        <div class="product-title">Airmax</div>
+        <div class="product-price">$19.99</div>
+        <button class="add-to-cart-button" onclick="addToCart('product : Airmax', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card" onclick="addToCart('product : Airmax (grey)', 29.99)">
+    <img src="airmax 2.png" alt="Product" class="product-image">
+    <div class="product-title">Airmax</div>
+    <div class="product-price">$29.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('product : Airmax (grey)', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airmax', 39.99)">
+    <img src="airmax 3.png" alt="Product" class="product-image">
+    <div class="product-title">Airmax</div>
+    <div class="product-price">$39.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airmax', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airmax (black)', 49.99)">
+    <img src="airmax 4.png" alt="Product" class="product-image">
+    <div class="product-title">Airmax</div>
+    <div class="product-price">$49.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airmax (black)', 49.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airmax 90 (white)', 59.99)">
+    <img src="airmax 5.png" alt="Product" class="product-image">
+    <div class="product-title">Airmax 90</div>
+    <div class="product-price">$59.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airmax 90 (white)', 59.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airmax 90', 69.99)">
+    <img src="airmax 6.png" alt="Product" class="product-image">
+    <div class="product-title">Airmax 90</div>
+    <div class="product-price">$69.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airmax 90', 69.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airmax 90 (grey)', 79.99)">
+    <img src="airmax 7.png" alt="Product" class="product-image">
+    <div class="product-title">Airmax 90</div>
+    <div class="product-price">$79.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airmax 90 (grey)', 79.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airmax 90 (yellow)', 89.99)">
+    <img src="airmax 8.png" alt="Product" class="product-image">
+    <div class="product-title">Airmax 90</div>
+    <div class="product-price">$89.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airmax 90 (yellow)', 89.99)">Add to Cart</button>
+  </div>
+</div>
+
+<hr>
+<h3 style="text-align: center;">SB DUNKS</h3>
+<marquee behavior="scroll" direction="left" style="color: #28a745;">Welcome to Drip clothing store</marquee>
+
+<div class="product-container">
+  <!-- Nike Sb dunks -->
+    <div class="product-card" onclick="addToCart('product : Nike Sb Dunks (brown)', 19.99)">
+        <img src="sb dunks1.png" alt="Product" class="product-image">
+        <div class="product-title">Nike Sb dunks</div>
+        <div class="product-price">$19.99</div>
+        <button class="add-to-cart-button" onclick="addToCart('product : Nike Sb Dunks (brown)', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card" onclick="addToCart('product : Nike Sb Dunks', 29.99)">
+    <img src="sb dunks 2.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Sb dunks</div>
+    <div class="product-price">$29.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('product : Nike Sb Dunks', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Nike Sb Dunks (white)', 39.99)">
+    <img src="sb dunks 3.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Sb dunks</div>
+    <div class="product-price">$39.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Nike Sb Dunks (white)', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Nike Sb Dunks (black)', 49.99)">
+    <img src="sb dunks 4.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Sb dunks</div>
+    <div class="product-price">$49.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Nike Sb dunks (black)', 49.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Sb dunks (orange)', 59.99)">
+    <img src="sb dunks 5.png" alt="Product" class="product-image">
+    <div class="product-title">Sb dunks</div>
+    <div class="product-price">$59.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Sb dunks (orange)', 59.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Sb dunks (red)', 69.99)">
+    <img src="sb dunks 6.png" alt="Product" class="product-image">
+    <div class="product-title">Sb dunks</div>
+    <div class="product-price">$69.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Sb dunks (red)', 69.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Sb dunks', 79.99)">
+    <img src="sb dunks 7.png" alt="Product" class="product-image">
+    <div class="product-title">Sb dunks</div>
+    <div class="product-price">$79.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Sb dunks', 79.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Sb dunks (grey)', 89.99)">
+    <img src="sb dunks 8.png" alt="Product" class="product-image">
+    <div class="product-title">Sb dunks</div>
+    <div class="product-price">$89.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Sb dunks (grey)', 89.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">BAPE STAR</h3>
+<marquee behavior="scroll" direction="left" style="color: #28a745;">Welcome to Drip clothing store</marquee>
+
+<div class="product-container">
+  <!-- Bape star -->
+    <div class="product-card" onclick="addToCart('product : Bape star (black)', 19.99)">
+        <img src="bape star 1.png" alt="Product" class="product-image">
+        <div class="product-title">Bape star</div>
+        <div class="product-price">$19.99</div>
+        <button class="add-to-cart-button" onclick="addToCart('product : Bape star (black)', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card" onclick="addToCart('product : Bape star (grey)', 29.99)">
+    <img src="bape star 2.png" alt="Product" class="product-image">
+    <div class="product-title">Bape star</div>
+    <div class="product-price">$29.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('product : Bape star (grey)', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Bape star (green)', 39.99)">
+    <img src="bape star 3.png" alt="Product" class="product-image">
+    <div class="product-title">Bape star</div>
+    <div class="product-price">$39.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Bape star (green)', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Bape star', 49.99)">
+    <img src="bape star 4.png" alt="Product" class="product-image">
+    <div class="product-title">Bape star</div>
+    <div class="product-price">$49.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Bape star', 49.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Nike Bape star', 59.99)">
+    <img src="bape star 5.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Bape star</div>
+    <div class="product-price">$59.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Nike bape star', 59.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Bape star (red)', 69.99)">
+    <img src="bape star 6.png" alt="Product" class="product-image">
+    <div class="product-title">Bape star</div>
+    <div class="product-price">$69.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Bape star (red)', 69.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Bape star (bluelight)', 79.99)">
+    <img src="bape star 7.png" alt="Product" class="product-image">
+    <div class="product-title">Bape star</div>
+    <div class="product-price">$79.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Bape star (bluelight)', 79.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Bape star max', 89.99)">
+    <img src="bape star 8.png" alt="Product" class="product-image">
+    <div class="product-title">Bape star Max</div>
+    <div class="product-price">$89.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Bape star max', 89.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">DIOR HOMME</h3>
+<marquee behavior="scroll" direction="left" style="color: #28a745;">Welcome to Drip clothing store</marquee>
+
+<div class="product-container">
+  <!-- Dior -->
+    <div class="product-card" onclick="addToCart('product : Dior homme (black)', 19.99)">
+        <img src="dior 1.png" alt="Product" class="product-image">
+        <div class="product-title">Dior Homme</div>
+        <div class="product-price">$19.99</div>
+        <button class="add-to-cart-button" onclick="addToCart('product : Dior homme (black)', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card" onclick="addToCart('product : Dior (green)', 29.99)">
+    <img src="dior 2.png" alt="Product" class="product-image">
+    <div class="product-title">Dior</div>
+    <div class="product-price">$29.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('product : Dior (green)', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : dior (brown)', 39.99)">
+    <img src="dior 3.png" alt="Product" class="product-image">
+    <div class="product-title">Dior</div>
+    <div class="product-price">$39.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Dior (brown)', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Dior homme', 49.99)">
+    <img src="dior 4.png" alt="Product" class="product-image">
+    <div class="product-title">Dior Homme</div>
+    <div class="product-price">$49.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Dior homme', 49.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Dior', 59.99)">
+    <img src="dior 5.png" alt="Product" class="product-image">
+    <div class="product-title">Dior</div>
+    <div class="product-price">$59.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Dior', 59.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Dior (white)', 69.99)">
+    <img src="dior 6.png" alt="Product" class="product-image">
+    <div class="product-title">Dior</div>
+    <div class="product-price">$69.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Dior (white)', 69.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Dior (bluelight)', 79.99)">
+    <img src="dior 7.png" alt="Product" class="product-image">
+    <div class="product-title">Dior</div>
+    <div class="product-price">$79.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Dior (bluelight)', 79.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Dior Homme', 89.99)">
+    <img src="dior 3.png" alt="Product" class="product-image">
+    <div class="product-title">Dior Homme</div>
+    <div class="product-price">$89.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Dior Homme', 89.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">AIRFORCE</h3>
+<marquee behavior="scroll" direction="left" style="color: #28a745;">Welcome to Drip clothing store</marquee>
+
+<div class="product-container">
+  <!-- Airforce -->
+    <div class="product-card" onclick="addToCart('product : Airforce (red)', 19.99)">
+        <img src="airforce 1.png" alt="Product" class="product-image">
+        <div class="product-title">Airforce</div>
+        <div class="product-price">$19.99</div>
+        <button class="add-to-cart-button" onclick="addToCart('product : Airforce (red)', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card" onclick="addToCart('product : Airforce (lightblue)', 29.99)">
+    <img src="airforce 2.png" alt="Product" class="product-image">
+    <div class="product-title">Airforce</div>
+    <div class="product-price">$29.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('product : Airforce (lightblue)', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airforce (yellow)', 39.99)">
+    <img src="airforce 3.png" alt="Product" class="product-image">
+    <div class="product-title">Airforce</div>
+    <div class="product-price">$39.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airforce (yellow)', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airforce (darkblue)', 49.99)">
+    <img src="airforce 4.png" alt="Product" class="product-image">
+    <div class="product-title">Airforce</div>
+    <div class="product-price">$49.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airforce (darkblue)', 49.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airforce (green)', 59.99)">
+    <img src="airforce 5.png" alt="Product" class="product-image">
+    <div class="product-title">Airforce</div>
+    <div class="product-price">$59.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airforce (green)', 59.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airforce (black)', 69.99)">
+    <img src="airforce 6.png" alt="Product" class="product-image">
+    <div class="product-title">Airforce</div>
+    <div class="product-price">$69.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airforce (black)', 69.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airforce (white)', 79.99)">
+    <img src="airforce 7.png" alt="Product" class="product-image">
+    <div class="product-title">Airforce</div>
+    <div class="product-price">$79.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airforce (white)', 79.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Airforce (plainyellow)', 89.99)">
+    <img src="airforce 8.png" alt="Product" class="product-image">
+    <div class="product-title">Airforce</div>
+    <div class="product-price">$89.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Airforce (plainyellow)', 89.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">CONVERSE</h3>
+<marquee behavior="scroll" direction="left" style="color: #28a745;">Welcome to Drip clothing store</marquee>
+
+<div class="product-container">
+  <!-- Converse -->
+    <div class="product-card" onclick="addToCart('product : Converse', 19.99)">
+        <img src="converse 1.png" alt="Product" class="product-image">
+        <div class="product-title">Converse</div>
+        <div class="product-price">$19.99</div>
+        <button class="add-to-cart-button" onclick="addToCart('product : Converse', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card" onclick="addToCart('product : Converse (bluelight)', 29.99)">
+    <img src="converse 2.png" alt="Product" class="product-image">
+    <div class="product-title">Converse</div>
+    <div class="product-price">$29.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('product : Converse (bluelight)', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Converse 360p', 39.99)">
+    <img src="converse 3.png" alt="Product" class="product-image">
+    <div class="product-title">Converse 360p</div>
+    <div class="product-price">$39.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Converse 360p', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Converse (yellow)', 49.99)">
+    <img src="converse 4.png" alt="Product" class="product-image">
+    <div class="product-title">Converse</div>
+    <div class="product-price">$49.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Converse (yellow)', 49.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Adidas Converse', 59.99)">
+    <img src="converse 5.png" alt="Product" class="product-image">
+    <div class="product-title">Adidas Converse</div>
+    <div class="product-price">$59.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Adidas Converse', 59.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Nike Converse', 69.99)">
+    <img src="converse 6.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Converse</div>
+    <div class="product-price">$69.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Nike Converse', 69.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Converse', 79.99)">
+    <img src="converse 7.png" alt="Product" class="product-image">
+    <div class="product-title">Converse</div>
+    <div class="product-price">$79.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Converse', 79.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card" onclick="addToCart('Product : Nike Converse (grey)', 89.99)">
+    <img src="converse 8.png" alt="Product" class="product-image">
+    <div class="product-title">Nike Converse</div>
+    <div class="product-price">$89.99</div>
+    <button class="add-to-cart-button" onclick="addToCart('Product : Nike Converse (grey)', 89.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+
+<!-- Inside the cart-details div -->
+<div class="cart-details" id="cart-details">
+    <span class="modal-close" onclick="toggleCart()">&times;</span>
+    <h3 style="color: red;">PRODUCT DETAILS</h3>
+    <div id="cart-items" class="cart-items"></div>
+    <hr style="border-top: 2px solid #007bff;">
+    <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+    <button class="pay-button" onclick="pay()" style="background-color: #28a745;">Pay Now</button>
+    <button class="back-to-main" onclick="backToMain()">close</button>
+  </div>
+  
+  <div class="modal-overlay" onclick="hideDetails()"></div>
+  <div class="details-modal" id="details-modal">
+    <span class="modal-close" onclick="hideDetails()">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+    <p id="modal-price"></p>
+</div>
+
+<!-- WhatsApp icon button -->
+<div class="whatsapp-icon" onclick="openWhatsApp()">
+  <i class="fab fa-whatsapp"></i>
+</div>
+
+<div class="footer">
+  &copy; 2023 Drip clothing store. All Rights Reserved. | 
+  <p>created by Chol Abraham</p>
+  <a href="#">Privacy Policy</a> | 
+  <a href="">Terms of Service</a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
