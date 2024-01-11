@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTwFJ8gCVYMMaJkFR4rlkyvmVMnU19NHdqUkt3I2hyOAA9fXwB075k6c3CTbaw4c8_BmPkJYxY8xv7WTlrGCvPYXhvCQylXv4xIRBPYpEUF58GZlYDIVWKsXpEG1JvKxYX2FXUaFT3Naw&usqp=CAc" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Home</title>
+</head>
+<body>
+<!--navbar-->
+<div class="navbar">
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="product.html" class="nav-link">Products</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="about.html" class="nav-link">About</a>
+  </div>
+
+  <div class="cart-icon" onclick="toggleCart()">
+    🛒
+    <span class="cart-icon-count" id="cart-icon-count">0</span>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">&#9776; CHOL'S LAPTOP</div>
+</div>
+
+  
+<div class="product-container">
+  <!-- HP Laptop -->
+  <div class="product-card">
+    <img src="/SHOES PICTURES/hp1.jpg" alt="Product" class="product-image">
+    <div class="product-title">HP Elitebook</div>
+    <div class="product-price">$19.99</div>
+    <button class="details-button" onclick="showDetails('HP Elitebook', 'processor i5 RAM 4 SSD 256GB', 19.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('HP Elitebook', 19.99)">Add to Cart</button>
+  </div>
+  
+  <div class="product-card">
+    <img src="/SHOES PICTURES/hp2.jpg" alt="Product" class="product-image">
+    <div class="product-title">Hp chromebook</div>
+    <div class="product-price">$29.99</div>
+    <button class="details-button" onclick="showDetails('HP chromebook', 'processor i5 RAM 8 HDD 500GB', 29.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('HP chromebook', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="/SHOES PICTURES/hp3.jpg" alt="Product" class="product-image">
+    <div class="product-title">Hp Notebook</div>
+    <div class="product-price">$39.99</div>
+    <button class="details-button" onclick="showDetails('HP Notebook', 'processor: i7, RAM: 8, HDD: 500GB', 39.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('HP Notebook', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="/SHOES PICTURES/hp4.jpg" alt="Product" class="product-image">
+    <div class="product-title">Hp Elite x2</div>
+    <div class="product-price">$49.99</div>
+    <button class="details-button" onclick="showDetails('HP Elite x2', 'processor: i5, RAM: 4, SDD: 256GB', 49.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('HP Elite x2', 49.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">DELL</h3>
+
+
+
+<div class="product-container">
+  <!-- DELL Laptop -->
+    <div class="product-card">
+        <img src="/SHOES PICTURES/dell1.jpg" alt="Product" class="product-image">
+        <div class="product-title">Dell XPS 13</div>
+        <div class="product-price">$19.99</div>
+        <button class="details-button" onclick="showDetails('Dell XPS 13', 'processor: i7, RAM: 8, HDD: 1TB', 19.99)">Details</button>
+        <button class="add-to-cart-button" onclick="addToCart('Dell XPS 13', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card">
+    <img src="/SHOES PICTURES/dell2.jpg" alt="Product" class="product-image">
+    <div class="product-title">Dell XPS 15</div>
+    <div class="product-price">$29.99</div>
+    <button class="details-button" onclick="showDetails('Dell XPS 15', 'processor: i5, RAM: 8, HDD: 500GB', 29.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Dell XPS 15', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="/SHOES PICTURES/dell5.jpg" alt="Product" class="product-image">
+    <div class="product-title">Dell</div>
+    <div class="product-price">$39.99</div>
+    <button class="details-button" onclick="showDetails('Dell', 'processor: i7, RAM: 4, SDD: 1TB', 39.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Dell', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="/SHOES PICTURES/dell4.jpg" alt="Product" class="product-image">
+    <div class="product-title">Dell promax</div>
+    <div class="product-price">$49.99</div>
+    <button class="details-button" onclick="showDetails('Dell promax', 'processor: i9, RAM: 16, SDD: 2TB', 49.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Dell promax', 49.99)">Add to Cart</button>
+  </div>
+</div>
+
+<hr>
+<h3 style="text-align: center;">ACER</h3>
+
+
+<div class="product-container">
+  <!-- ACER Laptop -->
+    <div class="product-card">
+        <img src="SHOES PICTURES/acer1.jpg" alt="Product" class="product-image">
+        <div class="product-title">Acer asphire</div>
+        <div class="product-price">$19.99</div>
+        <button class="details-button" onclick="showDetails('Acer asphire 5', 'inter core: i3, RAM: 2, HDD: 256GB', 19.99)">Details</button>
+        <button class="add-to-cart-button" onclick="addToCart('Acer asphire 5', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card">
+    <img src="SHOES PICTURES/acer2.jpg" alt="Product" class="product-image">
+    <div class="product-title">Acer travelmate</div>
+    <div class="product-price">$29.99</div>
+    <button class="details-button" onclick="showDetails('Acer travelmate', 'Intel Core i9-13900K, RAM: 16GB, SSD: 2TB', 29.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Acer travelmate ', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/acer3.jpg" alt="Product" class="product-image">
+    <div class="product-title">Acer</div>
+    <div class="product-price">$39.99</div>
+    <button class="details-button" onclick="showDetails('Acer', 'processor: i9, RAM: 16, SDD: 256GB', 39.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Acer', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/acer4.jpg" alt="Product" class="product-image">
+    <div class="product-title">Acer swift</div>
+    <div class="product-price">$49.99</div>
+    <button class="details-button" onclick="showDetails('Acer swift', 'processor: i5, RAM: 4, SDD: 50GB', 49.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Acer swift', 49.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">LENOVO</h3>
+
+
+<div class="product-container">
+  <!-- LENOVO Laptop -->
+    <div class="product-card">
+        <img src="SHOES PICTURES/len2.jpg" alt="Product" class="product-image">
+        <div class="product-title">Lenovo ideapad</div>
+        <div class="product-price">$19.99</div>
+        <button class="details-button" onclick="showDetails('Lenovo ideapad', 'processor: i3, RAM: 8, HDD: 256GB', 19.99)">Details</button>
+        <button class="add-to-cart-button" onclick="addToCart('Lenovo ideapad', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card">
+    <img src="SHOES PICTURES/len3.jpg" alt="Product" class="product-image">
+    <div class="product-title">Lenovo legion</div>
+    <div class="product-price">$29.99</div>
+    <button class="details-button" onclick="showDetails('Lenovo legion 5', 'processor: i5, RAM: 16, SDD: 2TB', 29.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Lenovo legion 5', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/len4.jpg" alt="Product" class="product-image">
+    <div class="product-title">Lenovo thinkpad</div>
+    <div class="product-price">$39.99</div>
+    <button class="details-button" onclick="showDetails('Lenovo thinkpad x1', 'processor: i9, RAM: 16, SDD: 1TB', 39.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Lenovo thinkpad x1', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/len6.jpg" alt="Product" class="product-image">
+    <div class="product-title">Lenovo thinkpad</div>
+    <div class="product-price">$49.99</div>
+    <button class="details-button" onclick="showDetails('Lenovo thinkpad z13', 'processor: i7, RAM: 4, HDD: 500GB', 49.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Lenovo thinkpad z13', 49.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">MAC BOOK LAPTOP</h3>
+
+
+<div class="product-container">
+  <!-- MAC BOOK Laptop -->
+    <div class="product-card">
+        <img src="SHOES PICTURES/mac1.jpg" alt="Product" class="product-image">
+        <div class="product-title">Mac Book air 13</div>
+        <div class="product-price">$19.99</div>
+        <button class="details-button" onclick="showDetails('Mac book air 13', 'processor: i7, RAM: 8, SDD: 1TB', 19.99)">Details</button>
+        <button class="add-to-cart-button" onclick="addToCart('mac book air 13', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card">
+    <img src="SHOES PICTURES/mac2.jpg" alt="Product" class="product-image">
+    <div class="product-title">Mac Book air 15</div>
+    <div class="product-price">$29.99</div>
+    <button class="details-button" onclick="showDetails('Mac Book air 15', 'processor: i9, RAM: 16, HDD: 500GB', 29.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Mac Book air 15', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/mac5.jpg" alt="Product" class="product-image">
+    <div class="product-title">Mac Book pro 15</div>
+    <div class="product-price">$39.99</div>
+    <button class="details-button" onclick="showDetails('Mac Book pro 15', 'processor: i9, RAM: 16, SDD: 2TB', 39.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Mac Book pro 15', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/mac6.jpg" alt="Product" class="product-image">
+    <div class="product-title">Mac Book pro 16</div>
+    <div class="product-price">$49.99</div>
+    <button class="details-button" onclick="showDetails('Mac Book pro 16', 'processor: i9, RAM: 16, SDD: 1TB', 49.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Mac Book pro 16', 49.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<hr>
+<h3 style="text-align: center;">ASUS ZENBOOK</h3>
+
+
+<div class="product-container">
+  <!-- Asus zenbook -->
+    <div class="product-card">
+        <img src="SHOES PICTURES/asus1.jpg" alt="Product" class="product-image">
+        <div class="product-title">Asus Zenbook</div>
+        <div class="product-price">$19.99</div>
+        <button class="details-button" onclick="showDetails('Asus Zenbook', 'processor: i9, RAM: 4, HDD: 1TB', 19.99)">Details</button>
+        <button class="add-to-cart-button" onclick="addToCart('Asus zenbook', 19.99)">Add to Cart</button>
+    </div>
+  
+  <div class="product-card">
+    <img src="SHOES PICTURES/asus2.jpg" alt="Product" class="product-image">
+    <div class="product-title">Asus Zenbook</div>
+    <div class="product-price">$29.99</div>
+    <button class="details-button" onclick="showDetails('Asus zenbook', 'processor: i7, RAM: 16, SDD: 2TB', 29.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Asus zenbook', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/asus3.jpg" alt="Product" class="product-image">
+    <div class="product-title">Asus</div>
+    <div class="product-price">$39.99</div>
+    <button class="details-button" onclick="showDetails('Asus', 'processor: i9, RAM: 16, SDD: 256GB', 39.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Asus', 39.99)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="SHOES PICTURES/asus4.jpg" alt="Product" class="product-image">
+    <div class="product-title">Asus</div>
+    <div class="product-price">$49.99</div>
+    <button class="details-button" onclick="showDetails('Asus', 'processor: i5, RAM: 8, SDD: 1TB', 49.99)">Details</button>
+    <button class="add-to-cart-button" onclick="addToCart('Asus', 49.99)">Add to Cart</button>
+  </div>
+</div>
+
+
+<div class="cart-details" id="cart-details">
+  <span class="modal-close" onclick="toggleCart()">&times;</span>
+  <h3 style="color: red;">PRODUCT DETAILS</h3>
+  
+ <table id="cart-items" class="cart-items">
+    <thead>
+        <tr style="color: red;">
+            <th>PRODUCT</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+        </tr>
+    </thead>
+    <tbody id="cart-items-body"></tbody>
+</table>
+
+  
+  <hr style="border-top: 2px solid #007bff;">
+  <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+  <button class="pay-button" onclick="pay()">Pay Now</button>
+  <button class="back-to-main" onclick="backToMain()">close</button>
+</div>
+
+  
+ <!-- Add this button to view product details -->
+<div class="details-modal" id="details-modal">
+  <span class="modal-close" onclick="hideDetails()">&times;</span>
+  <h3 id="modal-title"></h3>
+  <p id="modal-description"></p>
+  <p id="modal-price"></p>
+  <button class="add-to-cart-button" onclick="addToCart(modalTitle, modalPrice)">Add to Cart</button>
+</div>
+
+<!-- WhatsApp icon button -->
+<div class="whatsapp-icon" onclick="openWhatsApp()">
+  <i class="fab fa-whatsapp"></i>
+</div>
+
+<div class="footer">
+  &copy; 2024 CHOL'S LAPTOP. All Rights Reserved. | 
+  <p>created by Chol Abraham</p>
+  <a href="#">Privacy Policy</a> | 
+  <a href="">Terms of Service</a>
+  
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:abrahamchol463@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
